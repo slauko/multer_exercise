@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>File Upload Exercise</title>
+	</head>
+	<body>
+		<form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+			<div>
+				<label>Select your profile picture:</label>
+				<input type="file" name="profile_pic" multiple />
+			</div>
+			<div>
+				<input type="submit" value="Upload" />
+			</div>
+		</form>
+		<form action="/get-pics" method="get">
+			<a href="/get-pics">Get all profile pictures</a>
+		</form>
+	</body>
+</html>
